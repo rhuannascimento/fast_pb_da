@@ -13,5 +13,8 @@ Após concluir o curso de Git, percebi que o conteúdo abordado já era familiar
 
 # Certificados
 
+![Certificado 1](certificados/Certificado_curso_git.pdf)
+
+![Certificado 2](certificados/Certificado_curso_linux.pdf)
 
 
