@@ -2,6 +2,7 @@
 
 1. [Resposta exercicio criando sua propia imagem docker.](./atividades/docker/Dockerfile)
 2. [Resposta exercicio volumes.](./atividades/docker_volume/index.php)
+3. [Resposta exercicio network.](./atividades/docker_network/conn_containers/flask/app.py)
 
 
 # Evidências
@@ -43,9 +44,30 @@ Conforme eu avançava no curso, comecei a descobrir como rodar várias imagens n
 
 Na seção de volumes do curso Docker, aprendi como persistir dados em containers e atualizá-los em tempo real. Existem três tipos de volumes: anonymous, named e bind mount. O bind mount foi o que mais me chamou a atenção, pois é com ele que se torna possível atualizar um container em tempo real. Além disso, com o uso de volumes, posso criar uma comunicação entre múltiplos containers.
 
-![Evidencia named volume](evidencias/evidencia_docker_com_named_volume.png "Evidencia 2 cpnatiners rodando com um unico volume")
+![Evidencia named volume](evidencias/evidencia_docker_com_named_volume.png "Evidencia 2 containers rodando com um unico volume")
 
 Na imagem acima é possível ver 2 containers rodando com um volume compartilhado.
+
+
+
+
+Na seção sobre redes, observei várias maneiras de conectar containers, e particularmente me impressionei com a abordagem da rede "bridge". Essa abordagem oferece a capacidade de conectar dois containers, permitindo que um deles utilize os recursos do outro de maneira eficiente.
+
+A primeira conexão realizada foi a externa a partir de uma API, a conexão pode ser vista na iamgem a seguir.
+
+![Evidencia network externa](evidencias/evidencia_docker_network_externa.png.png "Evidencia container conectando com api")
+
+
+Seguindo os estudos realizei a conexão de um container com meu banco de dados local, com essa conexão consegui inserir dados da aplicação do container em meu BD.
+
+![Evidencia network host](evidencias/evidencia_network_host.png "Evidencia container conectando com meu bd local")
+
+
+Já na próxima imagem, foram criados dois containers e estabeleceu-se uma conexão entre eles por meio de uma rede do tipo "bridge". O container Flask, por sua vez, utiliza essa conexão para inserir informações no container MySQL.
+
+![Evidencia network bridge](evidencias/evidencia_ntwork_bridge.png "Evidencia container conectando com bd de outro container")
+
+
 
 
 # Certificados
