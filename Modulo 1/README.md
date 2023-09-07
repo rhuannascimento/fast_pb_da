@@ -3,6 +3,7 @@
 1. [Resposta exercicio criando sua propia imagem docker.](./atividades/docker/Dockerfile)
 2. [Resposta exercicio volumes.](./atividades/docker_volume/index.php)
 3. [Resposta exercicio network.](./atividades/docker_network/conn_containers/flask/app.py)
+4. [Resposta exercicio docker compose](./atividades/docker_compose/projeto/docker-compose.yaml)
 
 
 # Evidências
@@ -66,6 +67,12 @@ Seguindo os estudos realizei a conexão de um container com meu banco de dados l
 Já na próxima imagem, foram criados dois containers e estabeleceu-se uma conexão entre eles por meio de uma rede do tipo "bridge". O container Flask, por sua vez, utiliza essa conexão para inserir informações no container MySQL.
 
 ![Evidencia network bridge](evidencias/evidencia_ntwork_bridge.png "Evidencia container conectando com bd de outro container")
+
+
+
+Na seção de Docker Compose, vi como simplificar e centralizar a inicialização e configuração de vários containers, tornando o processo mais organizado e eficiente.
+
+![Evidencia docker compose](evidencias/evidencia_docker_compose_wordpress.png "Wordpress rodando via docker compose")
 
 
 

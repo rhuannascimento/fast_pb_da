@@ -1,0 +1,14 @@
+title: "Bem vindo ao YAML"
+
+# Objeto do usuário
+user:
+  name: "Rhuan"
+  age: 20
+  admin: True
+  address: ["Juiz de Fora", "Minas Gerais", "Brasil"]
+
+# Objeto do arquivo
+file_info:
+  version: 1
+  name: "file.yaml"
+  observation: null
