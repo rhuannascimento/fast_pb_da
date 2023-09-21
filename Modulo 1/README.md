@@ -4,7 +4,10 @@
 2. [Resposta exercicio volumes.](./atividades/docker_volume/index.php)
 3. [Resposta exercicio network.](./atividades/docker_network/conn_containers/flask/app.py)
 4. [Resposta exercicio docker compose](./atividades/docker_compose/projeto/docker-compose.yaml)
-
+5. [Atividade python](./atividades/python/ex1.py)
+6. [Atividade python](./atividades/python/ex2.py)
+7. [Atividade python](./atividades/python/ex3.py)
+8. [Atividade python](./atividades/python/ex4.py)
 
 # Evidências
 
@@ -74,8 +77,7 @@ Na seção de Docker Compose, vi como simplificar e centralizar a inicializaçã
 
 ![Evidencia docker compose](evidencias/evidencia_docker_compose_wordpress.png "Wordpress rodando via docker compose")
 
-
-
+Aprender Python foi uma experiência relativamente fácil para mim, em grande parte devido à minha sólida base em linguagem C. A semelhança entre as sintaxes dessas duas linguagens desempenhou um papel fundamental na minha facilidade de aprendizado.
 
 # Certificados
 
