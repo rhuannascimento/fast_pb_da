@@ -85,4 +85,6 @@ Aprender Python foi uma experiência relativamente fácil para mim, em grande pa
 
 [Certificado Linux](certificados/Certificado_curso_linux.pdf)
 
+[Certificado SQL](certificados/Certificado_curso_SQL.pdf)
+
 
