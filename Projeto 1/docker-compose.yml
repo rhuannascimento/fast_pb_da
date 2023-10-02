@@ -1,0 +1,44 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: postgre
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    networks:
+      - minha-rede
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongodb-init/init.js:/docker-entrypoint-initdb.d/init.js:ro
+    networks:
+      - minha-rede
+
+  python_app:
+    build:
+      context: ./python_etl
+      dockerfile: /docker/Dockerfile
+    container_name: python_app
+    depends_on:
+      - postgres
+      - mongodb
+    volumes:
+      - ./python_etl:/python_etl
+      - ./input:/python_etl/input
+    networks:
+      - minha-rede
+
+networks:
+  minha-rede:
+
