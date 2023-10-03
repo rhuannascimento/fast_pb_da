@@ -70,21 +70,20 @@ def execute_postegres_query(query):
         print(f"Erro ao executar query: {e}")
 
 
+
+#dados do csv
+customers = read_csv_to_dict_list('/python_etl/input/olist_customers_dataset.csv') #Endereço do cliente
+order_item = read_csv_to_dict_list('/python_etl/input/olist_order_items_dataset.csv') #Dados da compra de um item
+order_payments = read_csv_to_dict_list('/python_etl/input/olist_order_payments_dataset.csv') #Dados de pagamentos
+orders = read_csv_to_dict_list('/python_etl/input/olist_orders_dataset.csv') #Dados status da compra
+products = read_csv_to_dict_list('/python_etl/input/olist_products_dataset.csv') #Dados status da compra
+
+#dados do mongo
+mongo_data = extract_data_from_mongo() #Review de compra
+
 query = """
 
 """
 execute_postegres_query(query)
 
-
 postgres_conn.close()
-
-#dados do csv
-#customers = read_csv_to_dict_list('/python_etl/input/olist_customers_dataset.csv') #Endereço do cliente
-#order_item = read_csv_to_dict_list('/python_etl/input/olist_order_items_dataset.csv') #Dados da compra de um item
-#order_payments = read_csv_to_dict_list('/python_etl/input/olist_order_payments_dataset.csv') #Dados de pagamentos
-#orders = read_csv_to_dict_list('/python_etl/input/olist_orders_dataset.csv') #Dados status da compra
-#products = read_csv_to_dict_list('/python_etl/input/olist_products_dataset.csv') #Dados status da compra
-
-#dados do mongo
-#mongo_data = extract_data_from_mongo() #Review de compra
-
