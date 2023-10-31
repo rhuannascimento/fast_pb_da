@@ -7,7 +7,7 @@ services:
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: root
-      POSTGRES_DB: postgre
+      POSTGRES_DB: pb_dw
     ports:
       - "5432:5432"
     volumes:
@@ -41,4 +41,5 @@ services:
 
 networks:
   minha-rede:
+    driver: bridge
 
