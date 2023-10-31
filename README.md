@@ -15,11 +15,13 @@ Fora do mundo da tecnologia, tenho uma paixão pela culinária, inspirada princi
 ## Módulos
 
 1. [Módulo I](Modulo%201/README.md)
-2. ...
+2. [Módulo II](Modulo%202/README.md)
+3.
 
 ## Projetos
 
-1. ...
+1. [Projeto I](Projeto%201/README.md)
+2. ...
 
 ## Contato
 
